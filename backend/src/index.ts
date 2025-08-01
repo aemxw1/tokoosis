@@ -15,7 +15,7 @@ const prisma = new PrismaClient();
 const app = express();
 
 app.use(express.json());
-app.use(express.static(path.join(__dirname, '../../frontend/build')));
+app.use(express.static(path.join(__dirname, '../build')));
 app.use('/auth', AuthRoutes);
 app.use('/api', PaymentRoutes);
 app.use('/api/admin', adminroutes);
@@ -102,7 +102,7 @@ app.get('/verify', async (req: Request, res: Response): Promise<void> => {
 });
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../frontend/build/index.html'));
+  res.sendFile(path.join(__dirname, '../build/index.html'));
 });
 
 const PORT = process.env.PORT || 3002;
