@@ -140,7 +140,7 @@ router.delete('/products/:id', authMiddleware, async (req, res) => {
 
   try {
     const existing = await prisma.product.findUnique({
-      where: { id: productId }
+      where: { id: productId}
     });
 
     if (!existing) {
@@ -168,7 +168,7 @@ router.patch('/transfer-proofs/:id', authMiddleware, async (req, res) => {
   }
 
   const updated = await prisma.paymentProof.update({
-    where: { id: Number(req.params.id) },
+    where: { id: Number(req.params.id)},
     data: { status }
   });
 
