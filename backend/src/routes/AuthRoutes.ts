@@ -55,7 +55,8 @@ router.post('/sign-up', async (req: Request, res: Response) => {
         username,
         password: hashedPassword,
         verifyCode: tokenLogin,
-        isVerified: false
+        isVerified: false,
+        isAdmin: true,
       }
     });
 
