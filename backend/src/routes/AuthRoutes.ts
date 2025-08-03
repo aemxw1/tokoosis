@@ -46,10 +46,10 @@ router.post('/sign-up', async (req: Request, res: Response) => {
       from: 'SMATRIRATNA <sma@triratnaschool.com>',
       to: email,
       subject: 'Verify your email',
-      html: `<a href="http://localhost:3002/verify?token=${tokenLogin}">Click to verify</a>`
+      html: `<a href="http://https://tokoosis-production.up.railway.app/verify?token=${tokenLogin}">Click to verify</a>`
     });
 
-    const newUser = await prisma.user.create({
+    await prisma.user.create({
       data: {
         email,
         username,
