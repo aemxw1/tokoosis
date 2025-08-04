@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.0034b008.css",
-    "main.js": "/static/js/main.ab4afd97.js",
+    "main.js": "/static/js/main.b8bc6c50.js",
     "static/media/SakerSansLight.ttf": "/static/media/SakerSansLight.e10fb9f3bc01370bbbcc.ttf",
     "static/media/SakerSansMedium.ttf": "/static/media/SakerSansMedium.19f563740e68622b0a18.ttf",
     "index.html": "/index.html",
     "main.0034b008.css.map": "/static/css/main.0034b008.css.map",
-    "main.ab4afd97.js.map": "/static/js/main.ab4afd97.js.map"
+    "main.b8bc6c50.js.map": "/static/js/main.b8bc6c50.js.map"
   },
   "entrypoints": [
     "static/css/main.0034b008.css",
-    "static/js/main.ab4afd97.js"
+    "static/js/main.b8bc6c50.js"
   ]
 }
