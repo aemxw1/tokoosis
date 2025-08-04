@@ -35,7 +35,7 @@ model Product {
 }
 
 model PaymentProof {
-  id         String           @id @default(autoincrement())
+  id         String           @id @default(cuid())
   filename   String
   filepath   String
   uploadedAt DateTime       @default(now())
