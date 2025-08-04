@@ -46,7 +46,7 @@ router.post('/sign-up', async (req: Request, res: Response) => {
       from: 'SMATRIRATNA <sma@triratnaschool.com>',
       to: email,
       subject: 'Verify your email',
-      html: `<a href="https://tokoosis-production.up.railway.app/verify?token=${tokenLogin}">Click to verify</a>`
+      html: `<a href="https://www.wajansmatr.my.id/verify?token=${tokenLogin}">Click to verify</a>`
     });
 
     await prisma.user.create({
@@ -142,7 +142,7 @@ router.post('/request-reset-password', async (req, res) => {
       from: 'SMATRIRATNA <sma@triratnaschool.com>',
       to: email,
       subject: 'Reset your password',
-      html: `<a href="http://localhost:3002/reset-password?token=${resetToken}">Click here to reset your password</a>`
+      html: `<a href="http://www.wajansmatr.my.id/reset-password?token=${resetToken}">Click here to reset your password</a>`
     });
 
     res.status(200).json({ success: true });
